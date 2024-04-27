@@ -8,12 +8,15 @@ class SecondPage extends StatelessWidget {
 
       appBar: AppBar(
 
+        actions: [
+          Icon(Icons.more_vert),
+        ],
       ),
       body: Padding(
         padding: const EdgeInsets.all(8.0),
         child: ListView(
           children: [
-            Text('Politics',
+            Text('Union Progressiste',
               style: TextStyle (
                 fontSize: 14,
                 color: Colors.teal,
@@ -21,7 +24,7 @@ class SecondPage extends StatelessWidget {
                 fontFamily: 'Montserrat',
               ),
             ),
-            Text('Nouveau code électoral: un casse tête',
+            Text('Talata Zime Yerima',
                 style: TextStyle(
                   fontSize: 25,
                   fontWeight: FontWeight.w500,
@@ -30,7 +33,7 @@ class SecondPage extends StatelessWidget {
                 )
             ),
 
-            Text('30/04/2023',
+            Text('Candidate',
               style: TextStyle(
                 fontWeight: FontWeight.w300,
                 color: Colors.grey[900],
@@ -38,12 +41,12 @@ class SecondPage extends StatelessWidget {
               ),
             ),
             Container(
-              width: 250,
-              height: 250,
+              width: 500,
+              height: 430,
               margin: EdgeInsets.only(top:20, bottom: 20),
               decoration: BoxDecoration(
                 image: DecorationImage (
-                  image: AssetImage('assets/images/image.jpg'),
+                  image: NetworkImage('https://talontalata.bj/upload/images//972300273440001617007285.jpg'),
                   fit: BoxFit.cover,
                 ),
                 borderRadius: BorderRadius.circular(10.0),
